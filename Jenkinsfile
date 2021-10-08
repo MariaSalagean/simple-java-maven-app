@@ -18,7 +18,7 @@ pipeline {
         }
         stage('Deploy') {
             steps {
-                sh 'sudo docker images'
+                sh './jenkins/scripts/deploy.sh'
             }
         }
         

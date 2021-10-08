@@ -16,6 +16,11 @@ pipeline {
                 sh './jenkins/scripts/deliver.sh'
             }
         }
+        stage('Deploy') {
+            steps {
+                sh 'docker images'
+            }
+        }
         
     }
 }

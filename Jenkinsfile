@@ -18,7 +18,7 @@ pipeline {
         }
         stage('Deploy') {
             steps {
-                sh 'ssh jenkins@10.0.2.15 "docker ps"'
+                sh 'ssh root@10.0.2.15 "docker ps"'
             }
         }
         
